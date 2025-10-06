@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="lv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Diamonts</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .frame {
+      width: min(1536px, 95vw);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      border-radius: 20px;        /* ← noapaļoti stūri */
+      overflow: hidden;           /* ← lai bilde iekšā arī noapaļotos */
+    }
+
+    .frame img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <img src="diamonts.jpg" alt="1536x1024" width="1536" height="1024">
+  </div>
+</body>
+</html>
