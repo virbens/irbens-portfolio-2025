@@ -5,12 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
   <title>Viktors Irbēns</title>
+  
+  <!-- Font Awesome ikonas -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: 2em auto; padding: 0 1em; line-height: 1.6; }
+    body { 
+      font-family: Arial, sans-serif; 
+      max-width: 800px; 
+      margin: 2em auto; 
+      padding: 0 1em; 
+      line-height: 1.6; 
+    }
     h1 { color: #1a73e8; }
     a { color: #1a73e8; text-decoration: none; }
     a:hover { text-decoration: underline; }
-       
+
+    /* Sociālo tīklu ikonas */
+    .social-icons {
+      margin-top: 15px;
+      display: flex;
+      gap: 15px;
+    }
+
+    .social-icons a {
+      color: #1a73e8;
+      font-size: 1.8rem;
+      transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #0056b3;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #777;
+      font-size: 0.9rem;
+      text-align: center;
+    }
   </style>
 </head>
 <body>
@@ -22,29 +55,43 @@
     <li><a href="/img/img.png">Čiekurs</a> – mana pirmā spēle Android</li>
     <li><a href="/apk/JautajumiBerniem.apk">Jautājumi bērniem</a> – mācies romiešu ciparus un lasi skaitļus</li>
   </ul>
+
   <h2>Privātuma politika</h2>
   <p>Drīzumā tiks pievienota sadaļa ar spēļu privātuma politikām.</p>
+
   <h2>Citi projekti</h2>
   <p>- <a href="https://irbens.com/diamonts/" target="_blank">DIAMONTS</a></p>
 
   <h2>Kontakti</h2>
-  <p>E-pasts: <a href="mailto:dc_1@inbox.lv">dc_1@inbox.lv</a></p>
-  <p style="margin-top: 15px; color: #777; font-size: 0.9rem;">
-  &copy; <script>document.write(new Date().getFullYear());</script> Visas tiesības aizsargātas.
-</p>
+  <div class="social-icons">
+    <!-- E-pasts -->
+    <a href="mailto:dc_1@inbox.lv" title="E-pasts">
+      <i class="fa-solid fa-envelope"></i>
+    </a>
+
+    <!-- Telefons -->
+    <a href="tel:+37128492824" title="Zvanīt">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+
+    <!-- Facebook -->
+    <a href="https://facebook.com/klikser" target="_blank" title="Facebook">
+      <i class="fa-brands fa-facebook"></i>
+    </a>
+
+    <!-- Instagram -->
+    <a href="https://instagram.com/klikser" target="_blank" title="Instagram">
+      <i class="fa-brands fa-instagram"></i>
+    </a>
+
+    <!-- TikTok -->
+    <a href="https://tiktok.com/klikser" target="_blank" title="TikTok">
+      <i class="fa-brands fa-tiktok"></i>
+    </a>
+  </div>
+
+  <footer>
+    &copy; <script>document.write(new Date().getFullYear());</script> Visas tiesības aizsargātas.
+  </footer>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
