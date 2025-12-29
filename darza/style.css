@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+/* Izvēlne augšā */
+.top-nav {
+  position: sticky;
+  top: 0;
+  background: white;
+  z-index: 10;
+  border-bottom: 1px solid #eee;
+}
+
+.top-nav nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+/* Galvenā bilde */
+.hero {
+  width: 100%;
+  height: 70vh; /* ļoti svarīgi */
+  max-height: 800px;
+}
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* IZŠĶIROŠAIS */
+  display: block;
+}
+
+/* Sponsori */
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sponsor {
+  aspect-ratio: 1 / 1; /* perfekti kvadrāti */
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
