@@ -1,17 +1,18 @@
-/* Reset */
+/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* PAMATA STILS */
 body {
   font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
   color: #222;
 }
 
-/* Izvēlne */
+/* IZVĒLNE */
 .top-nav {
   position: sticky;
   top: 0;
@@ -37,21 +38,21 @@ body {
   text-decoration: underline;
 }
 
-/* Hero bilde */
+/* HERO */
 .hero {
-  width: 80%;
+  width: 100%;
   height: 70vh;
   max-height: 800px;
 }
 
 .hero img {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   display: block;
 }
 
-/* Atbalstītāji */
+/* ATBALSTĪTĀJI */
 .supporters {
   max-width: 800px;
   margin: 0 auto;
@@ -67,7 +68,7 @@ body {
   margin-bottom: 1rem;
 }
 
-/* Sponsori */
+/* SPONSORI */
 .sponsors {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
@@ -77,10 +78,19 @@ body {
 .sponsor {
   aspect-ratio: 1 / 1;
   background: #f2f2f2;
+  padding: 0.8rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0.8rem;
+}
+
+/* klikšķināma visa zona */
+.sponsor a {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
 .sponsor img {
@@ -89,7 +99,7 @@ body {
   object-fit: contain;
 }
 
-/* Mobilais skats */
+/* MOBILAIS */
 @media (max-width: 600px) {
   .hero {
     height: 55vh;
@@ -99,6 +109,3 @@ body {
     gap: 1.2rem;
   }
 }
-
-
-
