@@ -1,62 +1,118 @@
-<!DOCTYPE html>
-<html lang="lv">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dārzā</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  <!-- IZVĒLNE -->
-  <header class="top-nav">
-    <nav>
-      <a href="#about">Par izstādi</a>
-      <a href="#gallery">Bildes</a>
-      <a href="#media">Mediji</a>
-      <a href="#donate">Atbalsti</a>
-    </nav>
-  </header>
+/* PAMATA STILS */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: #222;
+}
 
-  <!-- HERO -->
-  <section class="hero">
-    <img src="img/hero.png" alt="Izstāde Dārzā">
-  </section>
+/* IZVĒLNE */
+.top-nav {
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 10;
+  border-bottom: 1px solid #eee;
+}
 
-  <!-- ATBALSTĪTĀJI -->
-  <section class="supporters">
-    <h2>Atbalstītāji:</h2>
+.top-nav nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+}
 
-    <div class="sponsors">
+.top-nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.95rem;
+}
 
-      <div class="sponsor">
-        <a href="https://www.labojam.lv" target="_blank" rel="noopener">
-          <img src="img/logo1.png" alt="Sociālais kods">
-        </a>
-      </div>
+.top-nav a:hover {
+  text-decoration: underline;
+}
 
-      <div class="sponsor">
-        <a href="https://www.facebook.com/sabine.fonzviedre" target="_blank" rel="noopener">
-          <img src="img/logo2.png" alt="Sabīne Irbēna">
-        </a>
-      </div>
+/* HERO – NEKAS NETIEK GRIEZTS */
+.hero {
+  width: 100%;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
 
-      <div class="sponsor">
-        <a href="https://www.irbens.com" target="_blank" rel="noopener">
-          <img src="img/logo3.png" alt="Viktors Irbens">
-        </a>
-      </div>
+.hero img {
+  width: 400px;
+  height: 400px;
+  max-width: 90vw;
+  max-height: 90vw;
+  object-fit: contain;
+  display: block;
+}
 
-      <div class="sponsor">
-        <img src="img/logo4.png" alt="Sponsors 4">
-      </div>
+/* ATBALSTĪTĀJI */
+.supporters {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+}
 
-      <div class="sponsor">
-        <img src="img/logo5.png" alt="Sponsors 5">
-      </div>
+.supporters h2 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #555;
+  margin-bottom: 1rem;
+}
 
-    </div>
-  </section>
+/* SPONSORU GRID */
+.sponsors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 1rem;
+}
 
-</body>
-</html>
+/* SPONSORA BLOKS */
+.sponsor {
+  aspect-ratio: 1 / 1;
+  background: #f2f2f2;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* KLIKŠĶINĀMA VISA ZONA */
+.sponsor a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LOGO */
+.sponsor img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* MOBILAIS */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 45vh;
+  }
+
+  .top-nav nav {
+    gap: 1.2rem;
+  }
+}
