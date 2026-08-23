@@ -1,0 +1,5 @@
+# Čiekurs app-ads.txt
+# Host this file at: https://yourdomain.com/app-ads.txt
+# Google will crawl and verify this file automatically
+
+google.com, pub-9821251296021249, DIRECT, f08c47fec0942fa0
